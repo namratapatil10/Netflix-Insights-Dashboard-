@@ -1,15 +1,16 @@
-Netflix Content Insights Dashboard
+## Netflix Content Insights Dashboard
 Project Overview
 
 The Netflix Content Insights Dashboard is an end-to-end data analytics project developed using Microsoft Power BI. The objective of this project is to analyze Netflix’s global content library, including movies and TV shows, to uncover trends in content distribution, ratings, genres, and release patterns.
 
 This project demonstrates the complete Business Intelligence workflow—data cleaning, transformation, modeling, DAX calculations, and dashboard design—to convert raw streaming data into meaningful insights for content strategy and decision-making.
 
-Dashboard Image
+## Dashboard Image
+<img width="907" height="505" alt="IMG" src="https://github.com/user-attachments/assets/5e293791-5763-4833-9e06-4c7def2ca11c" />
 
-(You can insert your screenshot here)
 
-Key Insights
+
+## Key Insights
 The United States contributes the highest number of titles on Netflix.
 Movies dominate the platform, making up around 70% of total content, while TV shows account for ~30%.
 Most content falls under TV-MA and TV-14 ratings, indicating a focus on mature audiences.
@@ -41,7 +42,7 @@ Step 2: Data Cleaning & Transformation (ETL)
 
 Performed using Power Query in Power BI
 
-Key Transformations
+## Key Transformations
 Removed null and duplicate records
 Standardized country, genre, and rating values
 Converted date fields into proper format
@@ -53,10 +54,10 @@ Step 3: Data Modeling & DAX Calculations
 
 A structured data model was created for efficient analysis.
 
-Data Model
+## Data Model
 Single main table: netflix_titles
 Additional calculated date fields for time analysis
-Key DAX Measures
+## Key DAX Measures
 Total Titles = COUNT(netflix_titles[show_id])
 Total Movies = CALCULATE(COUNT(netflix_titles[show_id]), netflix_titles[type] = "Movie")
 Total TV Shows = CALCULATE(COUNT(netflix_titles[show_id]), netflix_titles[type] = "TV Show")
@@ -99,6 +100,6 @@ DAX measure creation
 Data visualization and storytelling
 Dashboard design best practices
 Trend and pattern analysis
-Conclusion
+## Conclusion
 
 This project showcases the complete Power BI analytics lifecycle—from raw Netflix data to actionable insights. It highlights how streaming platforms can leverage data analytics to optimize content strategy, improve audience targeting, and drive business growth.
